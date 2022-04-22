@@ -6,8 +6,8 @@ Big Data
 
 **Amazon Vine Program**
 
-**Overview:** We areanalyzing Amazon reviews written by members of the paid Amazon Vine program. I have picked dataset &quot;Outdoors&quot; from Amazon Dataset and did my analysis.
-[This is the link to file] (https://mc16outdoors.s3.amazonaws.com/amazon_reviews_us_Outdoors_v1_00.tsv)
+**Overview:** We areanalyzing Amazon reviews written by members of the paid Amazon Vine program. I have picked dataset **Outdoors** from Amazon Dataset and did my analysis.
+(https://mc16outdoors.s3.amazonaws.com/amazon_reviews_us_Outdoors_v1_00.tsv)
 
 
 I used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, I used Pandas to determine if there is any bias toward favorable reviews from Vine members in the dataset.
