@@ -16,6 +16,12 @@ I have picked dataset **Outdoors** from Amazon Dataset and did my analysis.
 I used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, I used Pandas to determine if there is any bias toward favorable reviews from Vine members in the dataset.
 
 **Results:**
+The dataset had over 3 million reviews recorded. In order to focus on reviews that would be considered more likely to be helpful, we needed to filter the dataset by:
+
+Count of Total Votes equal or greater than 20.
+Percent of Helpful Votes to Total Votes equal or greater than 50%.
+
+The results reduced the total number of reviews from 2M to 39.97K. This allowed us to answer the following questions:
 
 1. How many Vine reviews and non-Vine reviews were there?
 
